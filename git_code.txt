@@ -1,0 +1,34 @@
+### versiyon ###
+git --version veya git -v aynı şey
+
+### config ###
+git config --global user.name
+git config --global user.email
+git config --global user.name "cgezer" (eğer adı kısmı boş geliyorsa bu şekilde eklenir)
+git config --global user.email "email" (eğer email kısmı boş geliyorsa bu şekilde eklenir)
+git config --global -l (gitteki projeler repostories görülür)
+
+##DİKKAT: windows kullanılıyorsa notepad++ için PATH eklenmelidir.
+git config --global core.editor  "notepad++"
+
+git log --all --graph --decorate --oneline (br dataya takma ad, mahlas eklenmesini sağlar. daha sonra bu takma ad ile çağırılabilir)
+git config --global alias.takmaAd "log --all --decorate --graph --oneline"
+### GITHUP (Microsoft) ###
+git init
+git add .  (yazılan metin tüm dosyalara eklenir)
+git rm --cached dosyaAdi.txt (yazılan metin dosyaAdi dosyasına eklenir)
+git add dosya* (yazılan metin dosya ile beşlayan tüm dosyalara eklenir)
+git log
+
+git commit -m "commit 1" (commit eklemek için)
+git commit --amend -m "commit #1" (eklenen komitin adını değiştirmek için commit -1 adı commit #1 oldu)
+
+git remote
+git push -u origin master
+
+### GIT SIKLIKLA KULLANILAN KODLAR ###
+git status
+git help veya git -h (kullanılan komutların neler olduğu konusunda açıklama getir)
+
+
+
