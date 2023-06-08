@@ -47,3 +47,24 @@ git clone githubURL(hangi url ise o yazılacak)
 ### GIT SIKLIKLA KULLANILAN KODLAR ###
 git status
 git help veya git -h (kullanılan komutların neler olduğu konusunda açıklama getir)
+
+### GIT DIFF ###
+git log
+git diff commit1 commit2 (iki komit arasındaki farkı gösterir)
+### GIT IGNORE ###
+
+cat >>.gitignore ile gitignore dosyası oluşturulduğunda git tarafında görülmesini 
+istemediğimiz dosyaları bu dosyanın içeriğine yazmamız gerekir.
+
+### STASH ### (bir iş yaparken yapılan işin kaydedilip tekrar o işe dönmeyi sağlayan komut)
+git status
+git add .
+git stash save "database"
+git list
+git  git stash apply database(geri bu işe dönmek istendiğinde)
+
+### GIT BRANCH ###
+git branch --all(branchleri listeler)
+git branch abc (abcadında bir branch oluşturur)
+git checkout frontend(frontend branch'ne geçer.bunu git klasörümüzdede görebiliriz.)
+git merge frontend (frontend branch'ni master branch ile birleştirir)

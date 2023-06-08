@@ -1,5 +1,1 @@
 select * from user where user_id=12
- delete 
-
-select * from user where user_id=12
- delete 
